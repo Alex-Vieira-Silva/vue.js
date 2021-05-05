@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Vue.JS - Primeiros Passos</title>
+        <style type="text/css">
+            .txt{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 16px;
+            }
+            .cor{
+                background-color: #c0c0c0;
+            }
+            .error{
+                background-color: #8B0000;
+            }
+        </style>
+    </head>
+   <body>
+        <div id="app">
+             Nome: <input class="txt" v-bind:class="{ cor : isColor}">
+             <br><br>
+             Nome: <input class="txt" v-bind:class="{ error : haveError}" v-model="txtNome">
+             <br><br>
+             <button v-on:click="salvar">Salvar</button>
+        </div>
+        <script src="aula13.js"></script>
+   </body> 
+</html>

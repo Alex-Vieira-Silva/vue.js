@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Vue.JS - Primeiros Passos</title>
+    </head>
+   <body>
+        <div id="app">
+           <button v-on:click="contador += 1">Adiciona + 1</button>
+           <p>Quantas x o botão foi clicado: {{ contador }}</p>
+           <br><br>
+
+           <button v-on:click="incrementar">Adiciona + 1</button>
+           <p>Quantas x o botão foi clicado: {{ contador2 }}</p>
+           <br><br>
+
+           <input v-model="nome">
+           <button v-on:click="exibirNome">Exibir Nome</button>
+
+           <br><br>
+
+           N1: <input v-model="n1"><br>
+           N2: <input v-model="n2"><br>
+           <button v-on:click="somar">Somar</button>
+
+        </div>
+        <script src="aula9.js"></script>
+   </body> 
+</html>

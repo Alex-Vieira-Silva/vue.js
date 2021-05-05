@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Vue.JS - Primeiros Passos</title>
+    </head>
+   <body>
+        <div id="app">
+                <h1 v-if="exibirTitulo">Minha Página</h1>
+                <h1 v-else="exibirTitulo">Minha Página 2</h1>
+
+                <template v-if="exibirTitulo">
+                    <h1>TESTE</h1>
+                    <br>
+                    <input type="text">
+                    <button>BOTÃO</button>
+                </template>
+
+                <br><br>
+
+                <template v-if="cnpj">
+                        <h1>Cadastro PJ</h1>
+                        <br>
+                        Nome: <input type="text"><br>
+                        CNPJ: <input type="text"><br>
+                        <button>CADASTRAR</button>
+                </template>
+
+                <template v-else="cnpj">
+                        <h1>Cadastro PF</h1>
+                        <br>
+                        Nome: <input type="text"><br>
+                        CPF: <input type="text"><br>
+                        <button>CADASTRAR</button>
+                </template>
+
+                <br>
+                CNPJ: <input type="checkbox" v-model="cnpj">
+        </div>
+        <script src="aula11.js"></script>
+   </body> 
+</html>
